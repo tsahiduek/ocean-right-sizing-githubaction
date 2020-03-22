@@ -133,7 +133,7 @@ if __name__ == "__main__":
     parser.add_argument('--k8s-yamls', action="store", dest="k8s_yamls", default="K8s/deployment.yaml",
                         help='K8s yaml directory to process')
     args = parser.parse_args()
-    k8s_yamls = args.k8s_yamls.split("\n")
+    k8s_yamls = args.k8s_yamls.split(";")
 
     for k8s_yaml in k8s_yamls:
         main(k8s_yaml)
