@@ -1,0 +1,10 @@
+# action.yml
+name: "Ocean Right Sizing Mutator"
+description: "Mutate K8s Deployment files accordign to Ocean Right-Sizing recommendations"
+inputs:
+  k8s-yamls:
+    description: "K8s yaml directory "
+    required: true
+runs:
+  using: "docker"
+  image: "Dockerfile"
