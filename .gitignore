@@ -1,0 +1,4 @@
+command*
+.vscode*
+.env
+K8s-*
