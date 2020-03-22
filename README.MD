@@ -53,7 +53,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Ocean Right-Sizing remote action
-        uses: tsahiduek/ocean-right-sizing-githubaction@v0.1
+        uses: tsahiduek/ocean-right-sizing-githubaction@v0.1.1
         id: remote-ocean-right-sizing-mutator
         env:
           SPOT_OCEAN_ID: ${{ secrets.OCEAN_ID }}
